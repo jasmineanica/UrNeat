@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Navbar from './components/layout/Navbar';
-import DrinkItem from './components/drinks/DrinkItem';
+import Drinks from './components/drinks/Drinks';
 import './App.css';
 
 class App extends Component {
@@ -8,7 +8,7 @@ class App extends Component {
     return (
         <div className='App'>
         <Navbar title='URNeat'/>
-        <DrinkItem/>
+        <Drinks/>
         </div>
       );
   }
