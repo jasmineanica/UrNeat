@@ -27,7 +27,7 @@ export class Drinks extends Component {
 			<div style={userStyle}>
 				{this.props.drinks.map(drink => (
 						<DrinkItem key={drink.DSDLinkMasterProductID} drink={drink}/>
-					))},
+					))}
 					{this.props.localdrinks.map(localdrink => (
 							<DrinkItem key={localdrink.id} drink={localdrink}/>
 						))}
