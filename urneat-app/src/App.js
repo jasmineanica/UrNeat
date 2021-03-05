@@ -7,7 +7,33 @@ import './App.css';
 class App extends Component {
   state = {
     drinks: [],
-    loading: false
+    loading: false,
+  	localdrinks: [
+  		{
+  			id: '1',
+  			BrandName: 'The Balvenie Doublewood',
+  			ProductImage: 'https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hf8/h65/12291773431838.png',
+        BrandCategory1:'Whiskey',
+        BrandCategory2:'Scotch',
+        BrandCategory3:'Scotch Whiskey'
+  		},
+  		{
+  			id: '2',
+  			BrandName: 'The Green Spot',
+  			ProductImage: 'https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/he8/h26/12244707213342.png',
+        BrandCategory1:'Whiskey',
+        BrandCategory2:'Irish Whiskey',
+        BrandCategory3:''
+  		},
+  		{
+  			id: '3',
+  			BrandName: 'Basil Hayden\'s Kentucky Straight Bourbon',
+  			ProductImage: 'https://www.totalwine.com/dynamic/x490,sq/media/sys_master/twmmedia/hf4/hb9/12140740247582.png',
+        BrandCategory1:'Whiskey',
+        BrandCategory2:'Bourbon',
+        BrandCategory3:''
+  		}
+  	]
   };
 
 
@@ -39,7 +65,7 @@ class App extends Component {
         <Navbar />
 
           <div className='container'>
-            <Drinks loading={this.state.loading} drinks={this.state.drinks}/>
+            <Drinks loading={this.state.loading} drinks={this.state.drinks} localdrinks={this.state.localdrinks}/>
           </div>
 
         </div>
