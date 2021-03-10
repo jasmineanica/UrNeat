@@ -43,9 +43,15 @@ class App extends Component {
     // this.callBackendAPI()
     //   .then(res => this.setState({ data: res.express }))
     //   .catch(err => console.log(err));
-    const res = await this.callBackendAPI();
+
+    // // const res = await this.callBackendAPI();
+
     // console.log(res.Export.Report.Row);
+    // // this.setState({ drinks: res.Export.Report.Row, loading: false})
+
+    const res = await axios.get('https://dsdlink.com/ECP_20.12_A/aspx1/API?APICommand=JasmineAnica_ProductMasterData&APIToken=fc8cc7c6e4c43d759d6ff387a62f5643')
     this.setState({ drinks: res.Export.Report.Row, loading: false})
+
   }
 
   // Fetches our GET route from the Express server. (Note the route we are fetching matches the GET route from server.js
