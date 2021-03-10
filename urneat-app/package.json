@@ -2,7 +2,6 @@
   "name": "urneat-app",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://dsdlink.com",
   "homepage": "https://jasmineanica.github.io/URNeat",
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.9",
